@@ -6,3 +6,7 @@ edition = "2024"
 [dependencies]
 egui = "0.31.1"
 eframe = "0.31.1"
+
+
+[target.'cfg(windows)'.build]
+rustflags = ["-C", "target-feature=+crt-static", "-C", "link-args=/SUBSYSTEM:WINDOWS"]

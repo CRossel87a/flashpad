@@ -1,8 +1,11 @@
+#![windows_subsystem = "windows"]
 use eframe::egui;
 use std::time::{Duration, Instant};
 use std::sync::Arc;
 
+
 fn main() -> eframe::Result<()> {
+
     let options = eframe::NativeOptions::default();
     
     eframe::run_native(
